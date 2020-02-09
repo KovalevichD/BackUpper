@@ -13,7 +13,7 @@ npm install
 
 ## How it works
 
-This program opens the HTML file of your creative in the Google Chrome, waiting for the specified amount of time and make the screenshot. The program make screenshot by selector **#wrapper** so please make sure your creative **wrapped by tag** <div id="wrapper"></div>. Also the name of the backup image will be taken from the name of the folder in which the creative is located (example: /666x999/... => backup_666x999.jpg). Size of the image doesn't exceed 40KB. 
+This program opens the HTML file of your creative in the Google Chrome, waiting for the specified amount of time and make the screenshot. The program make screenshot by selector **#wrapper** so please make sure your creative **wrapped by tag** ```<div id="wrapper"></div>```. Also the name of the backup image will be taken from the name of the folder in which the creative is located (example: /666x999/... => backup_666x999.jpg). Size of the image doesn't exceed 40KB. 
 
 ## Usage
 
