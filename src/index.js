@@ -1,4 +1,3 @@
-// node /Users/mac/Documents/NodeJS/BackUPPER/index 2
 const Nightmare = require('nightmare'),
     sharp = require('sharp'),
     path = require('path'),

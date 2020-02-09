@@ -1,8 +1,15 @@
 {
-  "name": "screenshoter",
+  "name": "@kovalevichdemi/screenshoter",
   "version": "1.0.0",
   "description": "Make screenshot for banners",
-  "main": "index.js",
+  "main": "src/index.js",
+  "bin": {
+    "@kovalevichdemi/screenshoter": "bin/shot",
+    "shot": "bin/shot"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +19,7 @@
   "author": "Kovalevich Dmitry",
   "license": "ISC",
   "dependencies": {
+    "esm": "^3.2.25",
     "nightmare": "^3.0.2",
     "sharp": "^0.24.0"
   }
