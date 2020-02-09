@@ -6,7 +6,7 @@ This tool makes screenshots of ad banners sometime after the start of the animat
 
 ## Install
 
-Fork this repository and clone it locally. Open folder in the Terminal and complete installation
+Clone or download this repository locally. Open the folder in the Terminal and complete installation
 ```bash
 npm install 
 ```
