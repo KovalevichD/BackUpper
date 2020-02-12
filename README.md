@@ -17,9 +17,9 @@ Install dependencies
  npm i
 ```
 
-Install tool as global npm package
+Install tool as global npm package(enter your password)
 ```sh
-npm i -g .
+sudo npm i -g .
 ```
 
 ## How it works
