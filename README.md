@@ -6,9 +6,20 @@ This tool makes screenshots of ad banners sometime after the start of the animat
 
 ## Install
 
-Clone or download this repository locally. Open the folder in the Terminal and complete installation
-```bash
-npm install 
+Clone repo using command below
+```sh
+git clone https://github.com/KovalevichD/BackUpper.git backupper
+```
+
+Install dependencies
+```sh
+ cd backupper
+ npm i
+```
+
+Install tool as global npm package
+```sh
+npm i -g .
 ```
 
 ## How it works
