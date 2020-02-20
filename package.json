@@ -20,6 +20,7 @@
   "license": "ISC",
   "dependencies": {
     "esm": "^3.2.25",
+    "glob": "^7.1.6",
     "nightmare": "^3.0.2",
     "sharp": "^0.24.0"
   }
