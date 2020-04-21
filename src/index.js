@@ -3,9 +3,10 @@ const Nightmare = require('nightmare'),
     path = require('path'),
     glob = require('glob'),
     waitPrompt = +(+process.argv[2] + '000') || 28000,
+    firstWait = waitPrompt / 2,
+    secondWait = waitPrompt - firstWait,
     sizeImg = 39000,
     qualityImg = 100
-
 
     glob(process.cwd() + '/**/*.html', function (err, files) {
  
@@ -56,7 +57,8 @@ const Nightmare = require('nightmare'),
         
         //make a screenshot and put it to the buffer
         const buffer = await nightmare.viewport(dimensionsImg.width, dimensionsImg.height)
-            .wait(waitPrompt)
+            .wait(firstWait)
+            .wait(secondWait)
             .screenshot()
             .end()
         
