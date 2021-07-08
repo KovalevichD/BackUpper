@@ -14,7 +14,7 @@ const Nightmare = require('nightmare'),
             console.log(err);
         } else {
             files.forEach(file => {
-                const pathOfHtml = 'file://' + path.resolve(file)
+                const pathOfHtml = 'file://' + file
                 const splittedPathFile = file.split('/')
                 const pathFolder = splittedPathFile.slice(0, splittedPathFile.length - 1).join('/') + '/'
 
@@ -47,7 +47,7 @@ const Nightmare = require('nightmare'),
             .then(dimensions => {
                 const dimensionsName = dimensions.width + 'x' + dimensions.height
 
-                shotName = 'backup_' + dimensionsName + '.jpg'
+                shotName = 'backup' + '.jpg'
 
                 dimensionsImg.width = dimensions.width
                 dimensionsImg.height = dimensions.height
@@ -90,6 +90,6 @@ const Nightmare = require('nightmare'),
                 }
             })
             .catch(function (err) {
-                console.log("Something wrong")
+                console.log(err)
             })
     }
